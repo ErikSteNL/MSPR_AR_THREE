@@ -11,9 +11,10 @@
     </style>
   </head>
 
-    <script src="aframe.min.js"></script>
-      <script src="aframe-ar.js"> </script>    
+  <script src="aframe.min.js"></script>
+  <script src="aframe-ar.js"> </script>    
   <script src="aframe-multisrc-component.js"></script>
+  <script src="cube.js"></script>
 
   <body style='margin : 0px; overflow: hidden;'>
 
@@ -29,9 +30,9 @@
 
       <a-marker preset="hiro">
         <a-box 
-          position='0 0 -2' 
+          position='0 0 ' 
           multisrc="srcs:#right,#left,#top,#bottom,#front,#back"
-          depth="1.5" 
+          depth="1" 
           height="1" 
           width="1">
         </a-box>
@@ -39,5 +40,4 @@
 
     </a-scene>
   </body>
-
 </html>
